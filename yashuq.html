@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            function val()
+        {
+            var name,pass,email
+            name=document.getElementById('t1').value;
+            email=document.getElementById('t2').value;
+            pass=document.getElementById('t3').value;
+            if (name=='')
+            {
+                alert("please enter a name");
+            }
+            else if (email==''){
+                alert("enter a email");
+            }
+            else if (name=='' && pass==''){
+                alert("username and password");
+            }
+            else if(pass.length<8){
+                alert(" password");
+            }
+            else{
+                alert("user"+name+"logged sucessfully");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>name</label>
+            <input type="text" value="" id="t1">
+            <label>email</label>
+            <input type="text" value="" id="t2">
+            <label>password</label>
+            <input type="password" id="t3" value="">
+            <input type="submit" onclick="val()">
+        </form>
+    </body>
+  
+</html>
